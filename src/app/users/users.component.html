@@ -1,0 +1,17 @@
+<p>
+  users works!
+</p>
+<div class="tiles-wrapper grid">
+  <div class="tiles element-item" *ngFor="let item of list; let i = index" [attr.data-category] = "item" (click)="remove(i)">
+    {{item}}
+    <input type="button" value="edit" (click) = "edit(i)"/>
+  </div>
+  <!-- <div class="tiles element-item" data-category="Shayan"> Shayan </div>
+  <div class="tiles element-item" data-category="Manisha"> Manisha </div>
+  <div class="tiles element-item" data-category="Kimaya"> Kimaya </div>
+  <div class="tiles element-item" data-category="Niloy"> Niloy </div>
+  <div class="tiles element-item" data-category="Dhruba"> Dhruba </div>
+  <div class="tiles element-item" data-category="Rakas"> Rakas </div> -->
+</div>
+<input type="button" value="clickme" (click) = "clickme(user);" />
+<input type="text" name="user" [(ngModel)] = "user">

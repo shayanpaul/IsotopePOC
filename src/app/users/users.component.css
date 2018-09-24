@@ -1,0 +1,15 @@
+.tiles{
+    height: 100px;
+    width: 100px;
+    padding: 20px;
+    margin: 5px;
+    background-color: blue;
+    display: inline-block;
+}
+.tiles:hover{
+    transition: transform .2s;
+    transform: scale(1.2);
+}
+.tiles-wrapper{
+    width: 600px;
+}
